@@ -3,6 +3,7 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-nativ
 interface TodoAppProps{
     addTodo: (todo:string)=>void
 }
+//TodoApp component for adding new todos
 const TodoApp:React.FC<TodoAppProps> = ({addTodo}) => {
   const [text, setText] = useState('');
   const handleTodoAdd =() => {
